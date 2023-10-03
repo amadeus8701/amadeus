@@ -1,0 +1,16 @@
+<!-- myapp/templates/myapp/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text_file.txt Contents</title>
+</head>
+<body>
+    <h1>text_file.txt Contents (Last 15 Lines)</h1>
+    <pre>
+        {% for line in content_lines %}
+            {{ line }}
+        {% endfor %}
+    </pre>
+</body>
+</html>
